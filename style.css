@@ -192,7 +192,7 @@ body {
     margin-top: 50px;
 }
 
-.about-btn a {
+.about-btn a, .prj-btn a {
     margin-left: -5px;
     padding: 15px 70px;
     font-size: 25px;
@@ -217,7 +217,7 @@ body {
     flex-direction: column;
 }
 
-.phead {
+.phead, .ser-head {
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 600;
@@ -238,27 +238,46 @@ body {
 /* end of navigation */
 
 /* Body Project Sizing */
-.project1 {
+.pbody  {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
+.project1, .project2, .project3, .project4 {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+
+/* Left Column text side */
 .ptitle {
     font-size: 35px;
     font-family: 'Overpass', sans-serif;
     text-transform: uppercase;
     color: #4B8DD7;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 20px #00fbff;
 }
 
 .psubhead {
     font-weight: 600;
     font-size: 19px;
+    margin-bottom: 20px;
 }
 
 .ptxt {
     width: 500px;
     font-size: 15px;
     color: rgba(255, 255, 255, 0.662);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.pbtn {
+    display: flex;
 }
 
 .pbtn i {
@@ -267,9 +286,122 @@ body {
 
 .pbtn a {
     text-decoration: none;
-    font-size: 10px;
+    font-size: 13px;
+    padding: 0 40px;
+    
 }
+/* Left Column End */
 
+/* Right Column image side */
 .proj-img img {
     width: 400px;
+    border-radius: 10px;
 }
+
+.proj-img{
+    position: relative;
+    margin:0 50px;
+}
+
+.proj-img::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: -30px;
+    height: 85%;
+    width: 98%;
+    border: 10px solid #4B8DD7;
+    border-radius: 8px;
+    z-index: -1;
+}
+/* End of Right Column */
+
+.prj-btn {
+    margin-top: 50px;
+}
+/* End of Portfolio Section */
+
+/* Service Section */
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.ser-head {
+    margin-right: 40px;
+}
+
+.ser-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionUp, .sectionDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ser-box-border {
+    width: 400px;
+    background: radial-gradient(circle at 100% 100%, #101630 0, #101630 3px, transparent 3px) 0% 0%/11px 11px no-repeat,
+              radial-gradient(circle at 0 100%, #101630 0, #101630 3px, transparent 3px) 100% 0%/11px 11px no-repeat,
+              radial-gradient(circle at 100% 0, #101630 0, #101630 3px, transparent 3px) 0% 100%/11px 11px no-repeat,
+              radial-gradient(circle at 0 0, #101630 0, #101630 3px, transparent 3px) 100% 100%/11px 11px no-repeat,
+              linear-gradient(#101630, #101630) 50% 50%/calc(100% - 16px) calc(100% - 22px) no-repeat,
+              linear-gradient(#101630, #101630) 50% 50%/calc(100% - 22px) calc(100% - 16px) no-repeat,
+              linear-gradient(310deg, #48abe0 0%, rgba(39,128,238,0.9) 50%, rgba(76, 0, 255, 0.77) 100%);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 25px #4C60C4;
+    border-radius: 11px;
+    padding: 18px;
+    margin: 30px 30px;
+}
+
+/* Header of the single service box */
+.Vd-head {
+    padding:  20px 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.Mb-head {
+    display: flex;
+    padding: 10px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.Vd-head i {
+    font-size: 30px;
+    color: #4A33C4;
+    padding: 10px 13px 5px 13px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.Mb-head i {
+    font-size: 40px;
+    color: #4A33C4;
+    padding: 10px 13px 0 13px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 10px;
+}
+/* End of Header Service box */
+
+/* Service low text box */
+.Vd-txt, .Mb-txt {
+    color: rgba(255, 255, 255, 0.662);
+    font-size: 15px;
+    padding: 0 20px;
+}
+/* End of Service low text box */
