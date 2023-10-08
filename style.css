@@ -21,6 +21,7 @@ body {
 .home {
     margin-bottom: 100px;
 }
+
 /* Beginning of navigation bar */
 .nav {
     display: flex;
@@ -38,7 +39,7 @@ body {
     padding-left: 10px;
 }
 
-.logo i{
+.logo i {
     font-size: 40px;
     padding-right: 1px;
     color: #4A33C4;
@@ -55,7 +56,7 @@ body {
     color: #4A33C4;
 }
 
-.nav-tag a {    
+.nav-tag a {
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
@@ -96,6 +97,7 @@ body {
 .btn1 {
     background-image: linear-gradient(to right, #4B8DD7 0%, #4C60C4 51%, #4A33C4 100%);
 }
+
 /* End of navigation bar */
 
 .home-body {
@@ -133,6 +135,7 @@ body {
     background-image: linear-gradient(to right, #4B8DD7 0%, #4C60C4 51%, #4A33C4 100%);
     border-radius: 8px;
 }
+
 /* End of home */
 
 /* About section */
@@ -143,7 +146,7 @@ body {
 }
 
 /* image editing */
-.about-body-img img{
+.about-body-img img {
     margin-top: 50px;
     height: 450px;
     border-radius: 10px;
@@ -164,6 +167,7 @@ body {
     border-radius: 5px;
     z-index: -1;
 }
+
 /* end of image editing */
 
 .about-body-txt {
@@ -192,7 +196,8 @@ body {
     margin-top: 50px;
 }
 
-.about-btn a, .prj-btn a {
+.about-btn a,
+.prj-btn a {
     margin-left: -5px;
     padding: 15px 70px;
     font-size: 25px;
@@ -207,6 +212,7 @@ body {
     border: 1px solid;
     border-color: #4A33C4;
 }
+
 /* End of about button styling */
 /* End of about section */
 
@@ -217,8 +223,10 @@ body {
     flex-direction: column;
 }
 
-.phead, .ser-head {
-    font-size: 50px;
+.phead,
+.ser-head,
+.exp-head {
+    font-size: 30px;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
@@ -235,17 +243,21 @@ body {
     font-size: 15px;
     font-weight: 600;
 }
+
 /* end of navigation */
 
 /* Body Project Sizing */
-.pbody  {
+.pbody {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.project1, .project2, .project3, .project4 {
+.project1,
+.project2,
+.project3,
+.project4 {
     display: flex;
     align-items: center;
     margin: 50px 0;
@@ -288,8 +300,9 @@ body {
     text-decoration: none;
     font-size: 13px;
     padding: 0 40px;
-    
+
 }
+
 /* Left Column End */
 
 /* Right Column image side */
@@ -298,9 +311,9 @@ body {
     border-radius: 10px;
 }
 
-.proj-img{
+.proj-img {
     position: relative;
-    margin:0 50px;
+    margin: 0 50px;
 }
 
 .proj-img::after {
@@ -314,11 +327,13 @@ body {
     border-radius: 8px;
     z-index: -1;
 }
+
 /* End of Right Column */
 
 .prj-btn {
     margin-top: 50px;
 }
+
 /* End of Portfolio Section */
 
 /* Service Section */
@@ -332,6 +347,7 @@ body {
 
 .ser-head {
     margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 .ser-box {
@@ -339,7 +355,8 @@ body {
     flex-direction: row;
 }
 
-.sectionUp, .sectionDown {
+.sectionUp,
+.sectionDown {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -348,12 +365,12 @@ body {
 .ser-box-border {
     width: 400px;
     background: radial-gradient(circle at 100% 100%, #101630 0, #101630 3px, transparent 3px) 0% 0%/11px 11px no-repeat,
-              radial-gradient(circle at 0 100%, #101630 0, #101630 3px, transparent 3px) 100% 0%/11px 11px no-repeat,
-              radial-gradient(circle at 100% 0, #101630 0, #101630 3px, transparent 3px) 0% 100%/11px 11px no-repeat,
-              radial-gradient(circle at 0 0, #101630 0, #101630 3px, transparent 3px) 100% 100%/11px 11px no-repeat,
-              linear-gradient(#101630, #101630) 50% 50%/calc(100% - 16px) calc(100% - 22px) no-repeat,
-              linear-gradient(#101630, #101630) 50% 50%/calc(100% - 22px) calc(100% - 16px) no-repeat,
-              linear-gradient(310deg, #48abe0 0%, rgba(39,128,238,0.9) 50%, rgba(76, 0, 255, 0.77) 100%);
+        radial-gradient(circle at 0 100%, #101630 0, #101630 3px, transparent 3px) 100% 0%/11px 11px no-repeat,
+        radial-gradient(circle at 100% 0, #101630 0, #101630 3px, transparent 3px) 0% 100%/11px 11px no-repeat,
+        radial-gradient(circle at 0 0, #101630 0, #101630 3px, transparent 3px) 100% 100%/11px 11px no-repeat,
+        linear-gradient(#101630, #101630) 50% 50%/calc(100% - 16px) calc(100% - 22px) no-repeat,
+        linear-gradient(#101630, #101630) 50% 50%/calc(100% - 22px) calc(100% - 16px) no-repeat,
+        linear-gradient(310deg, #48abe0 0%, rgba(39, 128, 238, 0.9) 50%, rgba(76, 0, 255, 0.77) 100%);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 25px #4C60C4;
     border-radius: 11px;
@@ -363,7 +380,7 @@ body {
 
 /* Header of the single service box */
 .Vd-head {
-    padding:  20px 10px;
+    padding: 20px 10px;
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
@@ -396,12 +413,62 @@ body {
     background-color: #fff;
     margin-right: 10px;
 }
+
 /* End of Header Service box */
 
 /* Service low text box */
-.Vd-txt, .Mb-txt {
+.Vd-txt,
+.Mb-txt {
     color: rgba(255, 255, 255, 0.662);
     font-size: 15px;
     padding: 0 20px;
 }
+
 /* End of Service low text box */
+
+/* Experience Section Start */
+.exp {
+    margin-top: 100px;
+}
+
+.exp-head{
+    margin-bottom: 70px;
+}
+
+.ubox, .lbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+/* Service Imgae Style (Shit! I hate to do this) */
+.exp-logo {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    align-items: center;
+}
+
+.exp-logo img {
+    margin: 0 60px;
+    width: 8%;
+    height: 13%;
+}
+
+.exp-status {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.sta-txt {
+    margin: 20px 88px;
+    text-transform: uppercase;
+}
+
+.sta-txt1 {
+    text-align: center;
+    margin: 20px 80px;
+    text-transform: capitalize;
+}
