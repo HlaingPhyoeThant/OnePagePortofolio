@@ -225,7 +225,8 @@ body {
 
 .phead,
 .ser-head,
-.exp-head {
+.exp-head,
+.cot-head {
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 600;
@@ -431,16 +432,18 @@ body {
     margin-top: 100px;
 }
 
-.exp-head{
+.exp-head {
     margin-bottom: 70px;
 }
 
-.ubox, .lbox {
+.ubox,
+.lbox {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
 }
+
 /* Service Imgae Style (Shit! I hate to do this) */
 .exp-logo {
     display: flex;
@@ -471,4 +474,123 @@ body {
     text-align: center;
     margin: 20px 80px;
     text-transform: capitalize;
+}
+/* End of Experience Section */
+
+/* Contact Section */
+.contact {
+    margin-top: 100px;
+    background-image: linear-gradient(to right,#4934C1 0%, #4E9DD6 100%);
+    border: 1px solid none;
+    border-radius: 100px 100px 0 0;
+}
+
+.cot-body {
+    display: flex;
+    justify-content: center;
+    margin-top: 19px;
+}
+
+/* Left side of the Body */
+.cot-body-txt {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.cot-body-txt p {
+    color: rgba(255, 255, 255, 0.662);
+    font-size: 10px;
+    width: 300px;
+    line-height: 20px;
+}
+
+/* Contact Information left column */
+.cot-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-siz i {
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 10px 15px 5px;
+    margin-bottom: 10px;
+    border: 2px solid none;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #4b8cd780 0%, #4c60c484 51%, #4b33c445 100%);
+    box-shadow: 0 0 10px #07011f;
+}
+
+.txt-siz {
+    font-size: 14px;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+/* Column Right Part Form */
+form {
+    width: 300px;
+    padding: 14px;
+    border: 1px solid none;
+    border-radius: 10px;    
+    background-image: linear-gradient(to right, #4B8DD7 0%, #4C60C4 51%, #4A33C4 100%);
+}
+
+form input {
+    color: rgba(255, 255, 255, 0.662);
+    background-color: #101630;
+    border-style: none;
+    border-radius: 3px;
+    width: 270px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+#msg {
+    padding: 20px 0 80px;
+}
+
+.cot-btn {
+    border: 1px solid none;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #101630;
+    padding: 7px 35px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+hr {
+    margin-top: 20px;
+    margin-left: 120px;
+    width: 1400px;
+    background-color: #fff;
+}
+
+.cot-footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.fot-icon {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+.fot-icon i{
+    font-size: 38px;
+    padding-right: 1px;
+}
+
+.cpyr {
+    display: flex;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 10px;
+    margin-left: 80px;
 }
